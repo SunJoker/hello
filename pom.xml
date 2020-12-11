@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
+        <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
     <artifactId>hello</artifactId>
@@ -16,6 +17,17 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <!--wagon plugin 配置-->
+        <!--服务器上的路径-->
+        <service-path>/work_test</service-path>
+        <!--jar包名-->
+        <pack-name>${project.artifactId}-${project.version}.jar</pack-name>
+        <!--服务器ip-->
+        <remote-addr>172.160.30.228:22</remote-addr>
+        <!--服务器用户-->
+        <remote-username>root</remote-username>
+        <!--服务器密码-->
+        <remote-passwd>123456</remote-passwd>
     </properties>
 
     <dependencies>
